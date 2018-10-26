@@ -4,12 +4,15 @@ import {
   Route,
   Link
 } from 'react-router-dom';
+import Photo from './Photo';
 
 class PhotoGrid extends Component {
   render() {
     return (
       <div className="photo-grid">
-        <p>I'm the photo grid</p>
+        {this.props.posts.map((post, i) => {
+          return <Photo {...this.props} key={i} i={i} post={post} />
+        })}
       </div>
     )
   }

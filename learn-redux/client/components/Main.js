@@ -13,7 +13,7 @@ class Main extends Component {
             {/* 🔥 if you change the h1, the title automatically refreshes */}
             {/* hot reloading the components */}
             <h1><Link to="/">Reduxagram</Link></h1>
-            {/* pass components down as children to Router */}
+            {/* pass components down as children from Main.js */}
             {React.cloneElement(this.props.children, this.props)}
         </div>
       </Router>
