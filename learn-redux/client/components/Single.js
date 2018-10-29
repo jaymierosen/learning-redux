@@ -1,18 +1,13 @@
-import React, { Component } from 'react';
-import {
-  BrowserRouter as Router,
-  Route,
-  Link
-} from 'react-router-dom';
+import React from 'react';
 
-class Single extends Component {
+const Single = React.createClass({
   render() {
     return (
       <div className="single-photo">
-        I'm a single photo
+      Im the single
       </div>
     )
   }
-}
+});
 
 export default Single;
